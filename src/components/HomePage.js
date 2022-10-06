@@ -53,7 +53,15 @@ const HomePage = ({data, status, addData, editData}) =>{
         </Box>
 
         <Box sx={{ height: '600px'}}>
-          <DataGrid columns = {header} rows = {data} />
+          <DataGrid 
+            columns = {header} 
+            rows = {data} 
+            initialState={{
+              sorting: {
+                sortModel: [{ field: 'transactionDate', sort: 'desc' }],
+              },
+            }}
+          />
         </Box>
       </Container>
     </div>
