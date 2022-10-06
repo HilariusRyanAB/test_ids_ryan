@@ -37,15 +37,6 @@ const HomePage = ({data, status, addData, editData}) =>{
       }
     }
   ];
-
-  const handleChangePage = (event, newPage) => {
-    setPage(newPage);
-  };
-
-  const handleChangeRowsPerPage = (event) => {
-    setRowsPerPage(+event.target.value);
-    setPage(0);
-  };
   
   return (
     <div align="center" style={{marginTop: "0px"}}>
