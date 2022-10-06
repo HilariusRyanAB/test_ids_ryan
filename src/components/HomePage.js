@@ -12,8 +12,6 @@ import { useNavigate, Link } from "react-router-dom";
 
 const HomePage = ({data, status, addData, editData}) =>{
   const navigate = useNavigate();
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
   const header = [
     {field: 'productID', headerName: 'Product ID', flex: 1, width: 120},
