@@ -139,7 +139,6 @@ const DetailPage = ({data, status, editData}) =>{
                         <div>
                             <FormControl fullWidth sx={{ m: 1 }}>
                                 <TextField
-                                    required
                                     label="Status"
                                     id="outlined-start-adornment"
                                     value={dataStatus.name}
