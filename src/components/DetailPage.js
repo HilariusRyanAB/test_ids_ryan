@@ -90,7 +90,7 @@ const DetailPage = ({data, status, editData}) =>{
                             </FormControl>
                             <FormControl sx={{ m: 1, width: '28ch' }} variant="outlined">
                                 <TextField
-                                    label="Create By"
+                                    label="Transaction Date"
                                     id="outlined-start-adornment"
                                     value={values.transactionDate}
                                     InputProps={{
