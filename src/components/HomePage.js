@@ -27,7 +27,7 @@ const HomePage = ({data, status, addData, editData}) =>{
       renderCell: (params) => {
         return <Link
           to={{
-            pathname: "/detail/" + params.id
+            pathname: "test_ids_ryan/detail/" + params.id
           }}
         >
           <Button variant="contained">Detail</Button>
@@ -44,7 +44,7 @@ const HomePage = ({data, status, addData, editData}) =>{
 
       <Container maxWidth="lg">
         <Box sx={{ '& > :not(style)': { m: 1 } }} align="right">
-          <Fab color="primary" aria-label="add" variant="extended" style={{marginBottom: "15px"}} onClick={() => navigate('/add')}>
+          <Fab color="primary" aria-label="add" variant="extended" style={{marginBottom: "15px"}} onClick={() => navigate('test_ids_ryan/add')}>
             <AddIcon sx={{ mr: 1 }} />
             Add Data
           </Fab>
